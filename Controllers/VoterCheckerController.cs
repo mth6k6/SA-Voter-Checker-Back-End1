@@ -12,7 +12,7 @@ namespace VoterEligChecker.Controllers
         public ActionResult<VerifiedResults> CheckEligibility(UserDetails user)
         {
             // ID Number validation
-            if (string.IsNullOrWhiteSpace(user.IdNum) || user.IdNum.Length < 13)
+            if (string.IsNullOrWhiteSpace(user.IdNum) || user.IdNum.Length <=13)
             {
                 return BadRequest("Invalid ID number.");
             }
