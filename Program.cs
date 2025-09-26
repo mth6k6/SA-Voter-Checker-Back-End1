@@ -13,7 +13,7 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowReactApp",
         policy => policy
-            .WithOrigins("http://localhost:3000") // React URL here
+            .WithOrigins("https://votereligibilitychecker.netlify.app/") // React URL here
             .AllowAnyHeader()
             .AllowAnyMethod());
 });
