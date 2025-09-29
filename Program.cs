@@ -21,7 +21,7 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
-app.UseCors("AllowReactApp"); //access
+app.UseCors("AllowNetlify"); //access
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
