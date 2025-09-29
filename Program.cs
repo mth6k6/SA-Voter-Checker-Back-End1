@@ -11,7 +11,7 @@ builder.Services.AddSwaggerGen();
 //accesss
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowReactApp",
+    options.AddPolicy("AllowNetlify",
         policy => policy
             .WithOrigins("https://votereligibilitychecker.netlify.app/") // React URL here
             .AllowAnyHeader()
