@@ -60,6 +60,11 @@ namespace VoterEligChecker.Controllers
                 IsEligibleToVote = eligibleToVote
             }
              );
+           [HttpGet("Ping")]
+           public IActionResult Ping()
+           {
+                  Return Ok("API is active")
+           }
 
         }
     }
